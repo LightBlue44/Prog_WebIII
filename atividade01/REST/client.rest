@@ -1,0 +1,79 @@
+### Buscar todo os ID
+GET http://localhost:3333/user/
+
+### Buscar ID especifico
+GET http://localhost:3333/user/05918116-03bb-4ac3-8b14-193f1310c912
+
+### Buscar ID especifico
+GET http://localhost:3333/user/49a368e5-7322-4549-88f0-31f0415e5
+
+### Inserir Informação no banco
+POST http://localhost:3333user/
+content-type: application/json
+
+{
+    "name": "FEMA 2",
+    "curso": "Tecnico em Informatica",
+    "email":"fema@fema.com",
+    "uc":"Programação WEB 3"
+}
+
+### Deletar um usuario pelo ID no banco
+DELETE  http://localhost:3333/user/c1216fa9-4359-4d71-89d9-137fb65a5440
+### Atualizar um usuario pelo ID no Banco
+PUT  http://localhost:3333/user/1fbb9380-a094-4503-a255-db7a2f98a561
+content-type: application/json
+
+{
+    "name": "Adrino Silva Santos",
+    "email":"adrino.s.santos@fema.com"
+}
+
+###
+GET http://localhost:3333/user/
+
+### Buscar todo os usuários
+GET http://localhost:3333/user/
+
+### Buscar usuário por ID
+GET http://localhost:3333/user/:id
+
+### Inserir usuário
+POST http://localhost:3333/user/
+content-type: application/json
+
+{
+    "nome": "Fulano de Tal",
+    "valor": 1000.00
+}
+
+### Atualizar usuário por ID
+PUT http://localhost:3333/user/:id
+content-type: application/json
+
+{
+    "name": "Beltrano de Tal",
+    "valor": 5000.00
+}
+
+### Deletar usuário por ID
+DELETE http://localhost:3333/user/:id
+
+### Cadastrar depósito para usuário
+POST http://localhost:3333/user/:id/deposit
+content-type: application/json
+
+{
+    "valor": 500.00
+}
+
+### Cadastrar retirada para usuário
+POST http://localhost:3333/user/:id/withdraw
+content-type: application/json
+
+{
+    "valor": 250.00
+}
+
+### Buscar extrato do usuário
+GET http://localhost:3333/user/:id/statement
