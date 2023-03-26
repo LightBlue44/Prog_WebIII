@@ -1,16 +1,15 @@
-import express from "express";
-import { randomUUID } from "node:crypto";
-import { Database } from "./database";
-import { router } from "./router/index";
+import express, { response } from 'express';
+import { router } from './router/index';
 
 const server = express();
+const port = 3000; //DEFININDO A PORTA DO SERVIDOR;
 
-const port = 3333;
-
+//INTERCEPTADOR DE DADOS;
 server.use(express.json());
+server.use(router)
 
-server.use(router);
-
+//PRECISA DE UMA PORTA E UMA FUNÇÃO CALLBACK;
 server.listen(port, () => {
-  console.log(`Server Running - end: http://localhost:${port}`);
+  console.log(`Servidor ligado - URL: http://localhost:${port}`);
+
 });
