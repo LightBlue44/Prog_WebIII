@@ -1,0 +1,46 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
+  :root {
+    --gray-light: #e1e1e6;
+    --gray-dark: #8d8d99;
+    --gray-600: #323238;
+    --color-bg-dark: #202024;
+    --color-line: #323238;
+    --blue: #005ac2;
+    --yellow: #f5df4d;
+    --red: #ff0000;
+    --orange: #ff6600;
+    --figma: #f44f1f;
+    --black: #000000;
+    --docker: #2396ed;
+    --github: #24292e;
+    --react: #00d8ff;
+    --nestjs: #e0234e;
+    --nodejs: #339933;
+    --postgre: #336791;
+    --git: #f05032;
+    --postman: #ff6c37;
+    --reactjs: #61dafb;
+  
+    font-size: 62.5%;
+  }
+  
+  body {
+    background: #202015;
+    color: var(--gray-light);
+  }
+  
+  body,
+  input,
+  textarea,
+  button {
+    font-family: "Titillium Web", sans-serif;
+    font-weight: 400;
+    font-size: 1rem;
+  }
