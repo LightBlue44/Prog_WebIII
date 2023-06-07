@@ -1,0 +1,130 @@
+.container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+
+  height: 100vh;
+}
+
+.title {
+  color: #fff;
+  font-size: 3rem;
+}
+
+.controles {
+  color: #321cf1;
+  margin-left: 4rem;
+  font-size: 2rem;
+}
+
+.contatos {
+  border-radius: 12px;
+  flex-direction: column;
+  margin-left: 20rem;
+  background-color: #ff0000;
+  border-radius: 5;
+}
+
+.headerContatos {
+  display: flex;
+  flex: 1;
+  flex-direction: row;
+  padding-bottom: 1rem;
+}
+
+.buttons {
+  margin-top: 1rem;
+  margin-left: 8.5rem;
+}
+
+.buttomAdd {
+  height: 3.4rem;
+  width: 3.4rem;
+  align-items: center;
+  background-color: #30a137;
+  color: #fff;
+  border-width: 0.1rem;
+  margin-left: 1rem;
+  border-radius: 5px;
+  font-size: 1.7rem;
+  padding-top: 0.3rem;
+}
+
+.buttomEdit {
+  height: 3.4rem;
+  width: 3.4rem;
+  align-items: center;
+  background-color: #143371;
+  color: #fff;
+  border-width: 0.1rem;
+  margin-left: 1rem;
+  border-radius: 5px;
+  font-size: 1.7rem;
+  padding-top: 0.3rem;
+}
+
+.buttomRemove {
+  height: 3.4rem;
+  width: 3.4rem;
+  align-items: center;
+  background-color: #9c0000;
+  color: #ffffff;
+  border-width: 0.1rem;
+  margin-left: 1rem;
+  border-radius: 5px;
+  font-size: 1.7rem;
+  padding-top: 0.3rem;
+}
+
+.buttom:hover {
+  box-shadow: 1px 2px 9px #00227e;
+}
+
+.pesquisa {
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+
+.buttomPesquisa {
+  background-color: #d30000;
+  height: 3.3rem;
+  width: 5rem;
+  margin-left: 4rem;
+  color: #fff;
+  font-size: 1.5rem;
+}
+.inputPesquisa {
+  background-color: #be000093;
+  height: 3.5rem;
+  width: 31rem;
+  border-width: 0rem;
+  font-size: medium;
+  color: #fff;
+}
+.listaContatos {
+  background-color: var(--color-bg-dark);
+  padding: 2rem;
+  border-radius: 0px 0px 5px 5px;
+}
+
+.listaCatalogo {
+  display: flex;
+  flex: 1;
+  flex-direction: row;
+}
+
+.letraCatalogo {
+  height: 4rem;
+  width: 4rem;
+  border-radius: 60px;
+  background-color: var(--color-bg-dark);
+  border: 1px solid #ff0000;
+  box-shadow: 1px 2px 5px #ff0000bd;
+  font-size: 2rem;
+  margin-right: 4rem;
+  margin-top: 4rem;
+  text-align: center;
+  padding-top: 0.2rem;
+  color: #bbbaba;
+}
